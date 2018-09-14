@@ -1,0 +1,1496 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation_0</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#python-3-formation-0">Python 3 Formation 0</a></li>
+<li><a href="#introduction">1 - Introduction</a>
+<ul>
+<li><a href="#histoire-et-pourquoi-python">Histoire et pourquoi Python</a></li>
+<li><a href="#installation">Installation</a></li>
+</ul>
+</li>
+<li><a href="#linterpréteur">2 - L’Interpréteur</a>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#un-outil-au-quotidien">Un outil au quotidien</a></li>
+<li><a href="#indentation">Indentation</a></li>
+</ul>
+</li>
+<li><a href="#variables">3 - Variables</a>
+<ul>
+<li><a href="#règles-de-nommage">Règles de nommage</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#affectation">Affectation</a></li>
+<li><a href="#types-de-variables">Types de variables</a></li>
+</ul>
+</li>
+<li><a href="#opérateurs">4 - Opérateurs</a>
+<ul>
+<li><a href="#opérateurs-arithmétiques">Opérateurs arithmétiques</a></li>
+<li><a href="#opérateurs-de-comparaison">Opérateurs de comparaison</a></li>
+<li><a href="#opérateurs-booléens">Opérateurs booléens</a></li>
+<li><a href="#priorité-des-opérations">Priorité des opérations</a></li>
+</ul>
+</li>
+<li><a href="#notre-premier-programme">5 - Notre premier programme</a>
+<ul>
+<li><a href="#objectif">Objectif</a></li>
+<li><a href="#création-du-projet">Création du projet</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#exécution">Exécution</a></li>
+<li><a href="#résultat">Résultat</a></li>
+</ul>
+</li>
+<li><a href="#structures-conditionnelles">6 - Structures conditionnelles</a>
+<ul>
+<li><a href="#portée-des-variables">Portée des variables</a></li>
+<li><a href="#si--if">Si : if</a></li>
+<li><a href="#sinon--else">Sinon : else</a></li>
+<li><a href="#sinon-si--elif">Sinon si : elif</a></li>
+</ul>
+</li>
+<li><a href="#boucles">7 - Boucles</a>
+<ul>
+<li><a href="#while">While</a></li>
+<li><a href="#important">Important</a></li>
+<li><a href="#exercice--chaud-froid-glacé-bouillant">Exercice : chaud, froid, glacé, bouillant</a></li>
+</ul>
+</li>
+<li><a href="#listes-1">8 - Listes</a>
+<ul>
+<li><a href="#rappel">Rappel</a></li>
+<li><a href="#attention-aux-indices">Attention aux indices</a></li>
+<li><a href="#opérations-sur-les-listes">Opérations sur les listes</a></li>
+<li><a href="#parcourir-une-liste-avec-les-boucles">Parcourir une liste avec les boucles</a></li>
+</ul>
+</li>
+<li><a href="#dictionnaire">9 - Dictionnaire</a>
+<ul>
+<li><a href="#rappel-1">Rappel</a></li>
+<li><a href="#opérations-sur-les-dictionnaires">Opérations sur les dictionnaires</a></li>
+<li><a href="#parcourir-un-dictionnaire-à-laide-dune-boucle">Parcourir un dictionnaire à l’aide d’une boucle</a></li>
+</ul>
+</li>
+<li><a href="#exercices">10 - Exercices</a>
+<ul>
+<li><a href="#exercice-1">Exercice 1</a></li>
+<li><a href="#exercice-2">Exercice 2</a></li>
+<li><a href="#exercice-3">Exercice 3</a></li>
+<li><a href="#exercice-4">Exercice 4</a></li>
+<li><a href="#exercice-5">Exercice 5</a></li>
+<li><a href="#exercice-6">Exercice 6</a></li>
+<li><a href="#exercice-7">Exercice 7</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="python-3-formation-0">Python 3 Formation 0</h1>
+<p><img src="https://elonet.fr/img/logo.png" alt="Elonet"></p>
+<h1 id="introduction">1 - Introduction</h1>
+<h2 id="histoire-et-pourquoi-python">Histoire et pourquoi Python</h2>
+<h3 id="historique">Historique</h3>
+<p>Python est un langage de programmation orientée objet interprété, il a été développé dans les années 1990 par Guido Von Rossum qui est fan de la série Monty Python.<br>
+Depuis 2001 Python est détenu par la Python Software Foundation, une association à but non lucratif.<br>
+En 2008 la Python Software Foundation publie Python 3 qui casse la compatibilité ascendante des versions. Le but est de réparer certains défauts du langage et de supprimer les éléments obsolètes.<br>
+La mort de Python 2 est depuis annoncée, la Python Software Foundation arrêtera le support de Python 2 le 1 Janvier 2020<br>
+<a href="https://pythonclock.org/">https://pythonclock.org/</a></p>
+<h3 id="pourquoi-python">Pourquoi Python</h3>
+<p>Python est un langage lisible et épuré, il nous permet d’aller droit au but en écrivant peu.<br>
+Le langage existe depuis 27 ans, il y a une forte communauté en cas de besoin.<br>
+Il y a une quantité impressionnante de bibliothèques pour nous aider, il est rare de devoir coder un système complet.</p>
+<h2 id="installation">Installation</h2>
+<p>Les prérequis pour la suite de la formation sont :</p>
+<ul>
+<li>Python 3 (&gt;= 3.4)</li>
+<li>Virtualenv</li>
+<li>Un éditeur de texte</li>
+</ul>
+<h3 id="python-3">Python 3</h3>
+<h4 id="linux">Linux</h4>
+<p>Si vous êtes sous Linux, il y a de grandes chances que Python 3 soit déjà installé, pour le vérifier il suffit de taper les commandes suivantes :</p>
+<pre><code># Test de la version de Python par défaut
+python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre>
+<pre><code># Test de la version de Python 3
+python3
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre>
+<p>Si Python 3 n’est pas installé, il vous suffit de taper la commande suivante :</p>
+<pre><code>apt-get install python3 python3-pip python3-dev
+</code></pre>
+<h4 id="windows">Windows</h4>
+<p>Sous Windows il suffit de télécharger et installer l’exécutable Python<br>
+Au choix<br>
+Exécutable Python 3.6.5 : <a href="https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe">https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe</a><br>
+Installateur Web Python 3.6.5 : <a href="https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64-webinstall.exe">https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64-webinstall.exe</a></p>
+<h3 id="virtualenv">Virtualenv</h3>
+<p>Python nous permet d’installer des bibliothèques qui seront disponibles pour l’ensemble des programmes / scripts que nous allons créer.<br>
+Nous pouvons donc créer un environnement d’exécution pour nos programmes / scripts ce qui est très pratique.<br>
+Arrive vite un problème, la gestion des dépendances et des versions de paquets.<br>
+Comment être sûr que l’installation d’une bibliothèque n’affecte pas une application en production à cause d’une dépendance ?<br>
+Réponse : La séparation des environnements, virtualenv nous permet de créer des environnements python virtuel, ainsi chaque programme (mais aussi des systèmes entiers) possède son propre environnement.</p>
+<h4 id="linux-1">Linux</h4>
+<pre><code># Installation virtualenv (Ubuntu 16.04)
+apt-get install python3-virtualenv virtualenv
+</code></pre>
+<p>Création d’un environnement virtuel :</p>
+<pre><code>virtualenv &lt;nom_env&gt;
+# Exemple
+virtualenv env
+</code></pre>
+<p>Utilisation de l’environnement virtuel :</p>
+<pre><code>source &lt;nom_env&gt;/bin/activate
+# Exemple
+source env/bin/activate
+</code></pre>
+<p>Le terminal indique que nous sommes dans un environnement virtuel en précédant notre nom d’utilisateur par (&lt;nom_env&gt;)</p>
+<pre><code>averdier:~$ source env/bin/activate
+(env) averdier:~$
+</code></pre>
+<p>Pour quitter l’environnement, il suffit de taper</p>
+<pre><code>deactivate
+</code></pre>
+<h4 id="windows-et-mac">Windows et Mac</h4>
+<p>Sur Windows et Mac je conseille l’utilisation de PyCharm, un IDE qui nous permet de le faire automatiquement.</p>
+<blockquote>
+<p>Sous Windows on peut utiliser WSL, mais celui-ci ne sera pas connecté à notre IDE</p>
+</blockquote>
+<h3 id="éditeur-de-texte">Éditeur de texte</h3>
+<p>En soi n’importe quel éditeur de texte fera l’affaire pour Python, personnellement je conseille l’utilisation d’un IDE (Environnement intégré de développement) qui nous simplifie la vie par bien des points :</p>
+<ul>
+<li>Autocomplétion</li>
+<li>Détection des erreurs avant exécution</li>
+<li>Configurations d’exécution</li>
+<li>Création d’environnements virtuels</li>
+<li>Etc</li>
+</ul>
+<h4 id="pycharm-community">PyCharm Community</h4>
+<p>Je conseille l’utilisation de PyCharm, c’est l’ide le plus complet que j’ai trouvé, il possède un thème sombre et c’est celui que j’utilise.<br>
+<a href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></p>
+<blockquote>
+<p>Un IDE est un outil complet qui consomme de la ressource</p>
+</blockquote>
+<h1 id="linterpréteur">2 - L’Interpréteur</h1>
+<p>Python est un langage interprété, c’est-à-dire qu’un interpréteur est en charge de lire ligne par ligne notre code pour générer les données de sortie.</p>
+<blockquote>
+<p>L’interpréteur est lié à l’environnement, il a accès à toutes les bibliothèques présentes dans l’environnement<br>
+Pour lancer l’interpréteur, il suffit de:</p>
+</blockquote>
+<h4 id="linux-2">Linux</h4>
+<p>Taper la commande</p>
+<pre><code>python3
+</code></pre>
+<h4 id="windows-1">Windows</h4>
+<p>Chercher Python 3 dans le menu démarrer et le lancer</p>
+<h2 id="un-outil-au-quotidien">Un outil au quotidien</h2>
+<p>Une fois Python 3 lancé, vous devriez avoir la fenêtre suivante</p>
+<pre><code>Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre>
+<p>Le <strong>&gt;&gt;&gt;</strong> indique que l’interpréteur attend une commande de notre part, à partir de là nous pouvons tester des algorithmes, faire des calculs, faire des essais de script.<br>
+Exemple:</p>
+<pre><code>Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; a = 5
+&gt;&gt;&gt; b = 7
+&gt;&gt;&gt; c = 3
+&gt;&gt;&gt; (a * c) / (c + b)
+1.5
+&gt;&gt;&gt; exit()
+</code></pre>
+<p>Il est fréquent d’avoir un interpréteur Python d’ouvert quand on développe.<br>
+La plupart des exemples fournis durant la formation ont été faits à l’aide de l’interpréteur, je vous invite à essayer l’ensemble des commandes fournies dans la formation.</p>
+<h2 id="indentation">Indentation</h2>
+<p>La notion de bloc d’instruction est importante dans l’interpréteur, un espace suffit pour faire une indentation.<br>
+Exemple :</p>
+<pre><code>&gt;&gt;&gt; kebab = 10
+&gt;&gt;&gt; if kebab &gt; 5:
+...  print("Un kebab de luxe")
+...
+Un kebab de luxe
+&gt;&gt;&gt;
+</code></pre>
+<blockquote>
+<p>Faire attention à l’espace entre <code>...</code> et <code>print</code><br>
+Les <code>...</code> indiquent que nous sommes dans un bloc et qu’il faut faire attention à l’indentation</p>
+</blockquote>
+<h1 id="variables">3 - Variables</h1>
+<p>L’essentiel du travail dans le développement est la manipulation de données sous diverses formes, simples ou complexes.<br>
+On peut représenter la mémoire de l’ordinateur comme un tableau contenant l’ensemble de nos données, chaque case de notre tableau possède un nom qui nous permet de lire la valeur de la case.<br>
+Une variable est composée d’un nom et d’une valeur déterminée.<br>
+Les noms de variables sont des noms que vous choisissez vous-même, il est important de donner un sens au nom de vos variables.<br>
+Exemple dans le cas d’une caisse enregistreuse:</p>
+<pre><code>Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; kebab = 5
+&gt;&gt;&gt; coca = 2.5
+&gt;&gt;&gt; glace = 4
+&gt;&gt;&gt; total = kebab + coca + glace
+&gt;&gt;&gt; total
+11.5
+&gt;&gt;&gt; exit()
+</code></pre>
+<p>A plus de sens et est plus lisible que :</p>
+<pre><code>Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; a = 5
+&gt;&gt;&gt; b = 2.5
+&gt;&gt;&gt; c = 4
+&gt;&gt;&gt; d = a + b + c
+&gt;&gt;&gt; d
+11.5
+&gt;&gt;&gt; exit()
+</code></pre>
+<h2 id="règles-de-nommage">Règles de nommage</h2>
+<p>Sous Python, les noms de variables doivent en outre obéir à quelques règles simples:<br>
+Un nom de variable est une séquence de lettres (a→z , A→Z) et de chiffres (0→9), qui doit toujours commencer par une lettre.<br>
+Seules les lettres ordinaires sont autorisées. Les lettres accentuées, les cédilles, les espaces, les caractères spéciaux tels que $, #, @, etc. sont interdits, à l’exception du caractère _ (souligné).<br>
+La casse est significative (les caractères majuscules et minuscules sont distingués).</p>
+<h4 id="mots-clés-du-langage">Mots clés du langage</h4>
+<p>33 noms de variable sont interdits, car ils sont utilisés par le langage lui-même.</p>
+<blockquote>
+<p>and, as, assert, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, None, nonlocal, not, or, pass, raise, return, True, try, while, with, yield</p>
+</blockquote>
+<h2 id="affectation">Affectation</h2>
+<p>L’affectation est une opération qui nous permet de lier un nom de variable et une valeur, dans Python comme dans beaucoup de langage, l’opérateur d’affection est <strong>=</strong><br>
+Exemple</p>
+<pre><code>&gt;&gt;&gt; &lt;nom_variable&gt; = &lt;valeur&gt;
+&gt;&gt;&gt; kebab = 5 # On assigne la valeur 5 à la variable kebab
+&gt;&gt;&gt; kebab = 7 # On change la valeur de la variable kebab
+</code></pre>
+<h3 id="affectation-multiple">Affectation multiple</h3>
+<p>Il est possible d’affecter plusieurs variables à la fois, cette technique est souvent utilisée lors d’initialisation ou de pour récupérer les valeurs d’un tuple (voir le chapitre sur les tuples).<br>
+Exemple</p>
+<pre><code># Affecter la même valeur à plusieurs variables
+&gt;&gt;&gt; &lt;nom_variable_1&gt; = &lt;nom_variable_2&gt; = &lt;valeur&gt;
+&gt;&gt;&gt; vitesse = acceleration = 0
+# Affecter plusieurs variables à la fois
+&gt;&gt;&gt; &lt;nom_variable_1&gt;, &lt;nom_variable_2&gt; = &lt;valeur_1&gt;, &lt;valeur_2&gt;
+&gt;&gt;&gt; poids, gravite = 30, 9.81
+</code></pre>
+<h3 id="afficher-la-valeur-dune-variable">Afficher la valeur d’une variable</h3>
+<pre><code># Dans l'interpréteur
+&gt;&gt;&gt; kebab = 5
+&gt;&gt;&gt; kebab
+5
+# Dans notre code
+&gt;&gt;&gt; print(kebab)
+5
+</code></pre>
+<h2 id="types-de-variables">Types de variables</h2>
+<p>Python possède un typage dynamique, c’est-à-dire qu’il détermine le type de notre variable au moment de l’affectation.<br>
+Python possède 5 types standards:</p>
+<ul>
+<li>Nombres</li>
+<li>Chaine de caractères</li>
+<li>Listes</li>
+<li>Tuples</li>
+<li>Dictionnaires</li>
+<li>Booléens<br>
+Pour connaitre le type d’une variable, il suffit de faire:</li>
+</ul>
+<pre><code>&gt;&gt;&gt; kebab = 5
+&gt;&gt;&gt; type(kebab)
+&lt;class 'int'&gt;
+</code></pre>
+<h3 id="nombres">Nombres</h3>
+<p>Le type nombre est divisé en 3 types</p>
+<ul>
+<li>int :  Entier</li>
+<li>float : Nombre à virgule</li>
+<li>complex : Nombre complexe<br>
+Exemple :</li>
+</ul>
+<pre><code>&gt;&gt;&gt; myInt = 3
+&gt;&gt;&gt; myFloat = 121.1
+&gt;&gt;&gt; myComplex = 3.14j
+&gt;&gt;&gt; type(myInt)
+&lt;class 'int'&gt;
+&gt;&gt;&gt; type(myFloat)
+&lt;class 'float'&gt;
+&gt;&gt;&gt; type(myComplex)
+&lt;class 'complex'&gt;
+</code></pre>
+<h3 id="chaines-de-caractères">Chaines de caractères</h3>
+<p>Le type string nous permet de stocker des messages.<br>
+Exemple :</p>
+<pre><code>&lt;nom_variable&gt; = "&lt;valeur&gt;"
+&gt;&gt;&gt; message = "Hello Wolrd"
+&gt;&gt;&gt; message
+'Hello Wolrd'
+&gt;&gt;&gt; print(message)
+Hello Wolrd
+&gt;&gt;&gt;
+</code></pre>
+<p>Nous pouvons aussi faire de la concaténation de chaines à l’aide de l’opérateur <strong>+</strong><br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; part_1 = "Hello"
+&gt;&gt;&gt; part_2 = "World"
+&gt;&gt;&gt; part_1 + part_2
+'HelloWorld'
+&gt;&gt;&gt; part_1 + " " + part_2
+'Hello World'
+&gt;&gt;&gt; message = part_1 + " " + part_2
+&gt;&gt;&gt; message
+'Hello World'
+</code></pre>
+<h3 id="listes">Listes</h3>
+<p>Les listes sont des tableaux dynamiques qui nous permettent de stocker tout ce que l’on veut, quel que soit le type.<br>
+Exemple :</p>
+<pre><code># Déclarer une liste
+&lt;nom_variable&gt; = [&lt;valeur_1&gt;, &lt;valeur_2&gt;, etc...]
+&gt;&gt;&gt; maListe = []
+&gt;&gt;&gt; maListe = [1, 2, 3, 4, 5]
+&gt;&gt;&gt; maListe
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; maListe = [1, "Bonjour", 3.14, [1, 3]]
+&gt;&gt;&gt; maListe
+[1, 'Bonjour', 3.14, [1, 3]]
+# Connaitre la taille d'une liste
+len(&lt;nom_variable&gt;)
+&gt;&gt;&gt; len(maListe)
+4
+# Accéder à un élément de la liste
+&lt;nom_variable&gt;[indice]
+&gt;&gt;&gt; maListe[1]
+'Bonjour'
+# Modifier un élément de la liste
+&lt;nom_variable&gt;[indice] = &lt;valeur&gt;
+&gt;&gt;&gt; maListe[1] = "Hello World"
+&gt;&gt;&gt;&gt; maListe[1]
+'Hello World'
+</code></pre>
+<blockquote>
+<p>Les listes font l’objet d’un chapitre</p>
+</blockquote>
+<h3 id="tuples">Tuples</h3>
+<p>Les tuples sont semblables aux listes à ceci près qu’ils ne sont pas modifiables, ils sont préférables aux listes quand on veut être certain que certaines données ne soient pas modifiables.<br>
+Exemple:</p>
+<pre><code># Déclarer un tuple
+&lt;nom_varibale&gt; = (&lt;valeur_1&gt;, &lt;valeur_2&gt;)
+&gt;&gt;&gt; mongoConfig = ('localhost', 27017)
+&gt;&gt;&gt; mongoConfig
+('localhost', 27017)
+# Accéder à un élément du tuple
+&lt;nom_variable&gt;[indice]
+&gt;&gt;&gt; mongoConfig[0]
+'localhost'
+# Affecter le contenu d'un tuple à des variables
+&gt;&gt;&gt; host, port = mongoConfig
+&gt;&gt;&gt; host
+'localhost'
+&gt;&gt;&gt; port
+27017
+</code></pre>
+<blockquote>
+<p>Voir chapitre sur les listes pour accéder à une information précise</p>
+</blockquote>
+<h3 id="dictionnaires">Dictionnaires</h3>
+<p>Les dictionnaires sont un type de données extrêmement puissant qui permet d’associer une clé à une valeur.<br>
+Exemple:</p>
+<pre><code># Déclarer un dictionnaire
+&lt;nom_variable&gt; = {&lt;cle_1&gt;: &lt;valeur_1&gt;, &lt;cle_2&gt;: &lt;valeur_2&gt;}
+&gt;&gt;&gt; mongoConfig = {"host": "localhost", "port": 27017}
+&gt;&gt;&gt; mongoConfig
+{'port': 27017, 'host': 'localhost'}
+# Accéder à un élément du dictionnaire
+&lt;nom_variable&gt;[cle]
+&gt;&gt;&gt; mongoConfig["host"]
+'localhost'
+# Modifier un élément du dictionnaire
+&lt;nom_variable&gt;[cle] = &lt;valeur&gt;
+&gt;&gt;&gt; monConfig["port"] = 27018
+&gt;&gt;&gt; mongoConfig["port"]
+27018
+</code></pre>
+<blockquote>
+<p>Les dictionnaires font l’objet d’un chapitre</p>
+</blockquote>
+<h3 id="booléen">Booléen</h3>
+<p>Les booléens sont des variables qui possèdent uniquement 2 états, Vrai ou Faux.<br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; eauBrule = False
+&gt;&gt;&gt; pythonEstBien = True
+</code></pre>
+<h1 id="opérateurs">4 - Opérateurs</h1>
+<p>Maintenant que nous savons comment déclarer des variables, il est temps de voir les différents opérateurs de Python.</p>
+<h2 id="opérateurs-arithmétiques">Opérateurs arithmétiques</h2>
+<p>Les opérateurs arithmétiques nous permettent de faire des calculs sur nos variables, les opérateurs disponibles dépendent du type de variable, il est logique de pouvoir diviser 2 nombres, moins de diviser une chaine de caractères par un nombre.</p>
+<blockquote>
+<p>Le type de sortie dépend des types fournis en entrée</p>
+</blockquote>
+<h3 id="opérateur-">Opérateur +</h3>
+<p>Permets d’ajouter 2 valeurs entre elles.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; + &lt;valeur_2&gt;
+&gt;&gt;&gt; kebab = 5
+&gt;&gt;&gt; coca = 2.5
+&gt;&gt;&gt; glace = 3
+&gt;&gt;&gt; total = kebab + coca + glace
+</code></pre>
+<h3 id="opérateur--1">Opérateur +=</h3>
+<p>Permets d’incrémenter la valeur d’une variable.</p>
+<pre><code>&lt;nom_variable&gt; += &lt;valeur&gt;
+&gt;&gt;&gt; compteur = 0
+&gt;&gt;&gt; compteur += 1
+&gt;&gt;&gt; compteur
+1
+</code></pre>
+<h3 id="opérateur--">Opérateur -</h3>
+<p>Permets de soustraire 2 valeurs entre elles.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; - &lt;valeur_2&gt;
+&gt;&gt;&gt; pointVie = 100
+&gt;&gt;&gt; degats = 30
+&gt;&gt;&gt; reste = pointVie - degats
+&gt;&gt;&gt; reste
+70
+</code></pre>
+<h3 id="opérateur---1">Opérateur -=</h3>
+<p>Permets de décrémenter la valeur d’une variable.</p>
+<pre><code>&lt;nom_variable&gt; -= &lt;valeur&gt;
+&gt;&gt;&gt; pointVie = 100
+&gt;&gt;&gt; degats = 30
+&gt;&gt;&gt; pointVie -= degats
+&gt;&gt;&gt; pointVie
+70
+</code></pre>
+<h3 id="opérateur--2">Opérateur /</h3>
+<p>Permets de réaliser une division entre 2 valeurs.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; / &lt;valeur_2&gt;
+&gt;&gt;&gt; totalMl = 230
+&gt;&gt;&gt; personnes = 7
+&gt;&gt;&gt; mlParPersonne = totalMl / personnes
+&gt;&gt;&gt; mlParPersonne
+32.857142857142854
+</code></pre>
+<h3 id="opérateur--3">Opérateur //</h3>
+<p>Permets de réaliser une division entière de 2 valeurs.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; // &lt;valeur_2&gt;
+&gt;&gt;&gt; totalMl = 230
+&gt;&gt;&gt; personnes = 7
+&gt;&gt;&gt; totalMl / personnes
+32.857142857142854
+&gt;&gt;&gt; totalMl // personnes
+32
+&gt;&gt;&gt; resultat = totalMl // personnes
+&gt;&gt;&gt; resultat
+32
+</code></pre>
+<h3 id="opérateur--4">Opérateur %</h3>
+<p>Permets de récupérer le reste de la division entière de 2 valeurs.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; % &lt;valeur_2&gt;
+&gt;&gt;&gt; totalMl = 230
+&gt;&gt;&gt; personnes = 7
+&gt;&gt;&gt; totalMl // personnes
+32    # 230 contient 32 * 7
+&gt;&gt;&gt; totalMl % personnes
+6     # 230 - (32 * 7) = 6
+&gt;&gt;&gt; (totalMl // personnes) * personnes + 6
+230   # 32 * 7 + 6 = 230
+&gt;&gt;&gt; resultat = totalMl % personnes
+&gt;&gt;&gt; resultat
+6
+</code></pre>
+<h3 id="opérateur--5">Opérateur *</h3>
+<p>Permets de multiplier 2 valeurs entre elles.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; * &lt;valeur_2&gt;
+&gt;&gt;&gt; ue = 2
+&gt;&gt;&gt; coeff = 4
+&gt;&gt;&gt; resultat = ue * coeff
+&gt;&gt;&gt; resultat
+8
+</code></pre>
+<h2 id="opérateurs-de-comparaison">Opérateurs de comparaison</h2>
+<p>Les opérateurs de comparaison nous permettent de comparer les valeurs de nos variables, les opérateurs disponibles dépendent du type de variable.</p>
+<blockquote>
+<p>Le type de sortie est un booléen</p>
+</blockquote>
+<h3 id="opérateur--6">Opérateur &gt;</h3>
+<p>Permets de vérifier si une valeur est supérieure à une autre.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; &gt; &lt;valeur_2&gt;
+&gt;&gt;&gt; vie = 100
+&gt;&gt;&gt; mana = 500
+&gt;&gt;&gt; vie &gt; mana
+False
+&gt;&gt;&gt; vie &gt; 100
+False
+&gt;&gt;&gt; mana &gt; vie
+True
+&gt;&gt;&gt; resultat = mana &gt; vie
+&gt;&gt;&gt; resultat
+True
+</code></pre>
+<h3 id="opérateur--7">Opérateur &gt;=</h3>
+<p>Permets de vérifier si une valeur est supérieure ou égale à une autre.</p>
+<pre><code>&lt;resulat&gt; = &lt;valeur_1&gt; &gt;= &lt;valeur_2&gt;
+&gt;&gt;&gt; vie = 100
+&gt;&gt;&gt; limite = 100
+&gt;&gt;&gt; vie &gt; limite
+False
+&gt;&gt;&gt; vie &gt;= limite
+True
+&gt;&gt;&gt; resultat = vie &gt;= limite
+&gt;&gt;&gt; resultat
+True
+</code></pre>
+<h3 id="opérateur--8">Opérateur &lt;</h3>
+<p>Permets de vérifier si une valeur est inférieure à une autre.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; &lt; &lt;valeur_2&gt;
+&gt;&gt;&gt; vie = 100
+&gt;&gt;&gt; degat = 30
+&gt;&gt;&gt; vie &lt; degat
+False
+&gt;&gt;&gt; degat &lt; vie
+True
+&gt;&gt;&gt; vivant = degat &lt; vie
+&gt;&gt;&gt; vivant
+True
+</code></pre>
+<h3 id="opérateur--9">Opérateur &lt;=</h3>
+<p>Permets de vérifier si une valeur est inférieure ou égale à une autre.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; &lt;= &lt;valeur_2&gt;
+&gt;&gt;&gt; temperature = 0
+&gt;&gt;&gt; temperatureGel = 0
+&gt;&gt;&gt; temperature &lt;= temperatureGel
+True
+&gt;&gt;&gt; temperature &lt;= -1
+False
+&gt;&gt;&gt; gel = temperature &lt;= temperatureGel
+</code></pre>
+<h3 id="opérateur--10">Opérateur ==</h3>
+<p>Permets de vérifier l’égalité entre 2 variables.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; == &lt;valeur_2&gt;
+&gt;&gt;&gt; limite = 100
+&gt;&gt;&gt; rage = 100
+&gt;&gt;&gt; limite == rage
+True
+&gt;&gt;&gt; limite == 200
+False
+&gt;&gt;&gt; berserk = limite == rage
+</code></pre>
+<h3 id="opérateur--11">Opérateur !=</h3>
+<p>Permets de vérifier la non égalité entre 2 variables.</p>
+<pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; != &lt;valeur_2&gt;
+&gt;&gt;&gt; attendu = 100
+&gt;&gt;&gt; fournis = 50
+&gt;&gt;&gt; attendu != fournis
+True
+&gt;&gt;&gt; attendu != 100
+False
+&gt;&gt;&gt; probleme = fournis != attendu
+</code></pre>
+<h2 id="opérateurs-booléens">Opérateurs booléens</h2>
+<p>Les opérateurs booléens nous permettent de faire de l’algèbre de bool à l’aide des booléens.</p>
+<blockquote>
+<p>Le type de sortie est un booléen</p>
+</blockquote>
+<h3 id="opérateur-not">Opérateur not</h3>
+<p>Il s’agit de l’opérateur de négation, ce qui est vrai devient faux et inversement.<br>
+Table de vérité :</p>
+
+<table>
+<thead>
+<tr>
+<th>variable</th>
+<th>not variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+</tr>
+</tbody>
+</table><pre><code>&lt;resultat&gt; = not &lt;variable&gt;
+&gt;&gt;&gt; chaud = True
+&gt;&gt;&gt; not chaud
+False
+&gt;&gt;&gt; froid = not chaud
+&gt;&gt;&gt; froid
+False
+</code></pre>
+<h3 id="opérateur-and">Opérateur and</h3>
+<p>Il s’agit de l’opérateur et, le résultat est vrai si et seulement si les 2 valeurs sont vraies.<br>
+Table de vérité:</p>
+
+<table>
+<thead>
+<tr>
+<th>variable_1</th>
+<th>variable_2</th>
+<th>variable_1 and variable_2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table><pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; and &lt;valeur_2&gt;
+&gt;&gt;&gt; soleil = True
+&gt;&gt;&gt; mer = True
+&gt;&gt;&gt; soleil and mer
+True
+&gt;&gt;&gt; soleil and False
+False
+&gt;&gt;&gt; vacances = soleil and mer
+&gt;&gt;&gt; vacances
+True
+</code></pre>
+<h3 id="opérateur-or">Opérateur or</h3>
+<p>Il s’agit de l’opérateur ou, le résultat est vrai si l’une des 2 valeurs est vraie.<br>
+Table de vérité:</p>
+
+<table>
+<thead>
+<tr>
+<th>variable_1</th>
+<th>variable_2</th>
+<th>variable_1 or variable_2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table><pre><code>&lt;resultat&gt; = &lt;valeur_1&gt; or &lt;valeur_2&gt;
+&gt;&gt;&gt; soleil = False
+&gt;&gt;&gt; mer = True
+&gt;&gt;&gt; soleil or mer
+True
+&gt;&gt;&gt; soleil or True
+True
+&gt;&gt;&gt; vacances = soleil or mer
+&gt;&gt;&gt; vacances
+True
+</code></pre>
+<h2 id="priorité-des-opérations">Priorité des opérations</h2>
+<p>Il faut faire attention aux priorités entre les opérateurs, par exemple comme en mathématique le <code>*</code> et prioritaire sur le <code>+</code><br>
+Exemple :</p>
+<pre><code>&gt;&gt;&gt; 1 + 3 * 2
+7
+</code></pre>
+<p>Comme en mathématique il est possible de spécifier la priorité des opérations à l’aide de parenthèse :</p>
+<pre><code>&gt;&gt;&gt; (1 + 3) * 2
+8
+</code></pre>
+<h1 id="notre-premier-programme">5 - Notre premier programme</h1>
+<p>Jouer avec l’interpréteur c’est bien, mais maintenant il est temps de créer notre premier programme avec l’éternel Hello World et de le sauvegarder dans un fichier .py</p>
+<h2 id="objectif">Objectif</h2>
+<p>Demander son prénom à l’utilisateur et lui dire bonjour.</p>
+<h3 id="lecture-dune-entrée-clavier">Lecture d’une entrée clavier</h3>
+<p>Pour lire une entrée clavier dans un terminal il nous suffit d’utiliser la fonction <strong>input</strong></p>
+<pre><code>&lt;resultat&gt; = input('&lt;message&gt;')
+</code></pre>
+<h3 id="afficher-un-résultat">Afficher un résultat</h3>
+<p>Pour afficher un résultat dans un terminal, il nous suffit d’utiliser la fonction <strong>print</strong></p>
+<pre><code>maVariable = 'mon message'
+print(maVariable)
+</code></pre>
+<h3 id="concaténation-de-string">Concaténation de string</h3>
+<p>Pour faire une concaténation entre 2 string, il nous suffit d’utiliser l’opérateur <strong>+</strong></p>
+<pre><code>prefix = 'Bonjour'
+separateur = ' '
+nom = 'Joe'
+message = prefix + separateur + nom
+</code></pre>
+<h2 id="création-du-projet">Création du projet</h2>
+<ol>
+<li>Ouvrir PyCharm</li>
+<li>Créer un nouveau projet</li>
+<li>Choisir Pure Python</li>
+<li>Vérifier qu’un environnement virtuel <strong>Python 3</strong> sera bien créé</li>
+<li>Créer un fichier <a href="http://hello.py">hello.py</a></li>
+</ol>
+<h2 id="code">Code</h2>
+<p>Notre programme est très simple, on demande son prénom et on lui dit bonjour.</p>
+<pre><code># hello.py
+prefix = "Bonjour"  
+separator = " "  
+prenom = input("Entrez votre prénom : ")  
+print(prefix + separator + prenom)
+</code></pre>
+<h2 id="exécution">Exécution</h2>
+<h3 id="pycharm">PyCharm</h3>
+<p>Clique droit dans le fichier puis " run ‘hello’ "</p>
+<h3 id="console">Console</h3>
+<pre><code>python3 hello
+</code></pre>
+<h2 id="résultat">Résultat</h2>
+<pre><code>Entrez votre prénom : Joe
+Bonjour Joe
+</code></pre>
+<h1 id="structures-conditionnelles">6 - Structures conditionnelles</h1>
+<p>Les structures conditionnelles nous permettent d’exécuter des blocs d’instructions en fonction d’expressions booléennes.<br>
+En Python les blocs d’instructions sont délimités par des indentations ce qui permet de facilement les distinguer.</p>
+<h2 id="portée-des-variables">Portée des variables</h2>
+<p>La portée des variables est descendante, un bloc enfant à accès aux variables du bloc parent, par contre un bloc parent n’a pas connaissance des variables de ses enfants.<br>
+Exemple qui fonctionne:</p>
+<pre><code># Bloc parent
+resultat = 0
+eu = 2
+if eu &gt; 0:
+  # Bloc enfant
+  resultat = 20 * eu
+  # Fin bloc enfant
+# Reprise bloc parent
+print(resultat)
+# Fin bloc parent
+</code></pre>
+<p>Exemple qui ne fonctionne pas</p>
+<pre><code># Bloc parent
+eu = 2
+if eu &gt; 0:
+  # Bloc enfant
+  resultat = 20 * eu
+  # Fin bloc enfant
+# Reprise bloc parent  
+print(resultat) --&gt; resultat n'existe pas dans le bloc parent
+# Fin bloc parent
+</code></pre>
+<h2 id="si--if">Si : if</h2>
+<p>Permets l’exécution d’un bloc d’instruction si une expression booléenne est vraie.<br>
+Schéma logique:</p>
+<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-fRWmWfNHQD0vpAfV" height="100%" viewBox="0 0 1003.4499969482422 303.0749969482422" style="max-width:1003.4499969482422px;"><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M348,141.5374984741211L373,141.5374984741211L398.500001525879,142.03749847412112" marker-end="url(#arrowhead1534)" style="fill:none"></path><defs><marker id="arrowhead1534" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M610.359872355838,110.82237235583789L696.0437469482422,80.5374984741211L751.0124969482422,80.5374984741211" marker-end="url(#arrowhead1535)" style="fill:none"></path><defs><marker id="arrowhead1535" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M610.3598746237964,173.25262537620355L696.0437469482422,202.5374984741211L762.0124969482422,202.5374984741211" marker-end="url(#arrowhead1536)" style="fill:none"></path><defs><marker id="arrowhead1536" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(696.0437469482422,80.5374984741211)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(696.0437469482422,202.5374984741211)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(184,141.5374984741211)" style="opacity: 1;"><rect rx="0" ry="0" x="-164" y="-36" width="328" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-154,-26)"><foreignObject width="308" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression booléenne</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(519.5374984741211,141.5374984741211)"><polygon points="121.53750000000001,0 243.07500000000002,-121.53750000000001 121.53750000000001,-243.07500000000002 0,-121.53750000000001" rx="5" ry="5" transform="translate(-121.53750000000001,121.53750000000001)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-79.921875,-52)"><foreignObject width="159.84375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression <br>est vraie ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(857.2312469482422,80.5374984741211)"><rect rx="0" ry="0" x="-106.21875" y="-36" width="212.4375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-96.21875,-26)"><foreignObject width="192.4375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(857.2312469482422,202.5374984741211)"><rect rx="0" ry="0" x="-95.21875" y="-36" width="190.4375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-85.21875,-26)"><foreignObject width="170.4375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code ignoré</div></foreignObject></g></g></g></g></g></g></svg></div>
+<pre><code>if &lt;expression_bool&gt;:
+  # Votre code
+pointVie = 100
+if pointVie &gt; 0:
+  print("Personnage vivant")
+</code></pre>
+<h2 id="sinon--else">Sinon : else</h2>
+<p>Permets l’exécution d’un bloc d’instructions si une <strong>condition</strong> n’est pas remplie.<br>
+Schéma logique:</p>
+<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-RgA3lkt8lwb6Z4Qr" height="100%" viewBox="0 0 1092.8562469482422 303.0749969482422" style="max-width:1092.8562469482422px;"><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M348,141.5374984741211L373,141.5374984741211L398.500001525879,142.03749847412112" marker-end="url(#arrowhead1551)" style="fill:none"></path><defs><marker id="arrowhead1551" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M610.359872355838,110.82237235583789L696.0437469482422,80.5374984741211L751.0124969482422,80.5374984741211" marker-end="url(#arrowhead1552)" style="fill:none"></path><defs><marker id="arrowhead1552" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M610.3598746237964,173.25262537620355L696.0437469482422,202.5374984741211L753.9343719482422,202.5374984741211" marker-end="url(#arrowhead1553)" style="fill:none"></path><defs><marker id="arrowhead1553" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(696.0437469482422,80.5374984741211)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(696.0437469482422,202.5374984741211)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(184,141.5374984741211)" style="opacity: 1;"><rect rx="0" ry="0" x="-164" y="-36" width="328" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-154,-26)"><foreignObject width="308" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression booléenne</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(519.5374984741211,141.5374984741211)"><polygon points="121.53750000000001,0 243.07500000000002,-121.53750000000001 121.53750000000001,-243.07500000000002 0,-121.53750000000001" rx="5" ry="5" transform="translate(-121.53750000000001,121.53750000000001)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-79.921875,-52)"><foreignObject width="159.84375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression <br>est vraie ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(901.9343719482422,80.5374984741211)"><rect rx="0" ry="0" x="-150.921875" y="-36" width="301.84375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-140.921875,-26)"><foreignObject width="281.84375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté si vrai</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(901.9343719482422,202.5374984741211)"><rect rx="0" ry="0" x="-148" y="-36" width="296" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-138,-26)"><foreignObject width="276" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté sinon</div></foreignObject></g></g></g></g></g></g></svg></div>
+<pre><code>if &lt;expression_bool&gt;:
+  # Votre code
+else:
+  # Votre code
+pointVie = 100
+if pointVie &gt; 0:
+  print("Personnage vivant")
+else:
+  print("Personnage mort")
+</code></pre>
+<h2 id="sinon-si--elif">Sinon si : elif</h2>
+<p>Permets d’exécuter une condition si la première condition n’est pas remplie.<br>
+Schéma logique:</p>
+<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-r2ThBepg6neKfzZW" height="100%" viewBox="0 0 1582.7562561035156 498.4750061035156" style="max-width:1582.7562561035156px;"><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M382.9375,204.1187515258789L407.9375,204.1187515258789L433.4375030517578,204.61875152587888" marker-end="url(#arrowhead1576)" style="fill:none"></path><defs><marker id="arrowhead1576" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M645.7063180815081,152.4125665556293L752.3812561035156,82L807.3500061035156,82" marker-end="url(#arrowhead1577)" style="fill:none"></path><defs><marker id="arrowhead1577" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M645.7063143876061,256.82493408651504L752.3812561035156,326.2375030517578L821.3781311035159,326.73750305175776" marker-end="url(#arrowhead1578)" style="fill:none"></path><defs><marker id="arrowhead1578" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1050.2348179601381,291.1191899083808L1153.8500061035156,252.2375030517578L1208.8187561035156,252.2375030517578" marker-end="url(#arrowhead1579)" style="fill:none"></path><defs><marker id="arrowhead1579" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1050.2348135006114,362.3558145511465L1153.8500061035156,400.2375030517578L1227.7875061035156,400.2375030517578" marker-end="url(#arrowhead1580)" style="fill:none"></path><defs><marker id="arrowhead1580" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(752.3812561035156,82)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(752.3812561035156,326.2375030517578)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1153.8500061035156,252.2375030517578)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1153.8500061035156,400.2375030517578)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(201.46875,204.1187515258789)" style="opacity: 1;"><rect rx="0" ry="0" x="-181.46875" y="-62" width="362.9375" height="124"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-171.46875,-52)"><foreignObject width="342.9375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression booléenne 1 <br> Expression booléenne 2</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(565.1750030517578,204.1187515258789)"><polygon points="132.2375,0 264.475,-132.2375 132.2375,-264.475 0,-132.2375" rx="5" ry="5" transform="translate(-132.2375,132.2375)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-93.296875,-52)"><foreignObject width="186.59375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression 1 <br>est vraie ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(953.1156311035156,82)"><rect rx="0" ry="0" x="-145.765625" y="-62" width="291.53125" height="124"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-135.765625,-52)"><foreignObject width="271.53125" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté si <br>condition 1 remplie</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(953.1156311035156,326.2375030517578)"><polygon points="132.2375,0 264.475,-132.2375 132.2375,-264.475 0,-132.2375" rx="5" ry="5" transform="translate(-132.2375,132.2375)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-93.296875,-52)"><foreignObject width="186.59375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression 2 <br>est vraie ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="E" transform="translate(1375.7875061035156,252.2375030517578)"><rect rx="0" ry="0" x="-166.96875" y="-62" width="333.9375" height="124"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-156.96875,-52)"><foreignObject width="313.9375" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté sinon si <br> condition 2 remplie</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="F" transform="translate(1375.7875061035156,400.2375030517578)"><rect rx="0" ry="0" x="-148" y="-36" width="296" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-138,-26)"><foreignObject width="276" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Code exécuté sinon</div></foreignObject></g></g></g></g></g></g></svg></div>
+<pre><code>if &lt;expression_bool&gt;:
+  # Votre code
+elif:
+  # Votre code
+else:
+  # Votre code
+  
+berserkLimite = 200
+pointVie = 200
+if pointVie == berserkLimite:
+  print("Personnage en mode berserk, fuyez")
+elif pointVie &gt; 0:
+  print("Personnage vivant")
+else:
+  print("Personnage mort")
+</code></pre>
+<h1 id="boucles">7 - Boucles</h1>
+<p>En programmation, on appelle boucle un système d’instructions qui permet de répéter un certain nombre de fois, voire indéfiniment, toute une série d’instructions.<br>
+Python propose 2 instructions pour réaliser des boucles, <strong>while</strong> et <strong>for in</strong></p>
+<h2 id="while">While</h2>
+<p>La boucle while est la plus simple, elle répète un bloc d’instructions tant que sa condition est remplie.<br>
+Schéma logique:</p>
+<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-ODPmUAXuHIn2BCXf" height="100%" viewBox="0 0 1581.4499969482422 334.2249984741211" style="max-width:1581.4499969482422px;"><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M348,178L373,178L398.5000015258788,178.50000000000003" marker-end="url(#arrowhead1611)" style="fill:none"></path><defs><marker id="arrowhead1611" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M582.5879509414071,130.1379524672861L685.4187469482422,56L740.3874969482422,56" marker-end="url(#arrowhead1612)" style="fill:none"></path><defs><marker id="arrowhead1612" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M630.9499984741211,178.5L685.4187469482422,178L792.5437469482422,178" marker-end="url(#arrowhead1613)" style="fill:none"></path><defs><marker id="arrowhead1613" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M991.6999969482422,178L1068.8562469482422,178L1093.8562469482422,178" marker-end="url(#arrowhead1614)" style="fill:none"></path><defs><marker id="arrowhead1614" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1293.0124969482422,178L1318.0124969482422,178L1343.0124969482422,185.14465408805032" marker-end="url(#arrowhead1615)" style="fill:none"></path><defs><marker id="arrowhead1615" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1343.0124969482422,241.85534591194968L1318.0124969482422,249L1193.4343719482422,249L1068.8562469482422,249L892.1218719482422,249L685.4187469482422,249L596.8782087208863,212.57179280499287" marker-end="url(#arrowhead1616)" style="fill:none"></path><defs><marker id="arrowhead1616" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(685.4187469482422,56)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(685.4187469482422,178)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(184,178)" style="opacity: 1;"><rect rx="0" ry="0" x="-164" y="-36" width="328" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-154,-26)"><foreignObject width="308" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Expression booléenne</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(514.2249984741211,178)"><polygon points="116.22500000000001,0 232.45000000000002,-116.22500000000001 116.22500000000001,-232.45000000000002 0,-116.22500000000001" rx="5" ry="5" transform="translate(-116.22500000000001,116.22500000000001)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-73.28125,-52)"><foreignObject width="146.5625" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Condition <br>remplie ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(892.1218719482422,56)"><rect rx="0" ry="0" x="-151.734375" y="-36" width="303.46875" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-141.734375,-26)"><foreignObject width="283.46875" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Suite du programme</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(892.1218719482422,178)"><rect rx="0" ry="0" x="-99.578125" y="-36" width="199.15625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-89.578125,-26)"><foreignObject width="179.15625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Instruction 1</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="E" transform="translate(1193.4343719482422,178)"><rect rx="0" ry="0" x="-99.578125" y="-36" width="199.15625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-89.578125,-26)"><foreignObject width="179.15625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Instruction 2</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="F" transform="translate(1442.2312469482422,213.5)"><rect rx="0" ry="0" x="-99.21875" y="-36" width="198.4375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-89.21875,-26)"><foreignObject width="178.4375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Instruction n</div></foreignObject></g></g></g></g></g></g></svg></div>
+<pre><code>while &lt;expression_bool&gt;:
+  # Votre code
+compteur = 0
+while compteur &lt; 5:
+  print(compteur)
+  compteur += 1
+# Sortie
+0
+1
+2
+3
+4
+</code></pre>
+<blockquote>
+<p>La boucle for in sera abordée pendant les chapitres Liste et dictionnaire</p>
+</blockquote>
+<h2 id="important">Important</h2>
+<p>Il faut faire très attention à ce que la variable présente dans la condition <strong>change</strong> au cours de la boucle, si ce n’est pas le cas, la condition sera toujours remplie, et il y aura une jolie boucle infinie qui bloquera votre programme.</p>
+<h2 id="exercice--chaud-froid-glacé-bouillant">Exercice : chaud, froid, glacé, bouillant</h2>
+<p>Afin de mettre en pratique les conditions et les boucles de manière ludique nous allons faire un petit jeu 2 joueur, le but du jeu est de trouver le nombre de notre adversaire en un minimum de coups.</p>
+<h3 id="déroulement">Déroulement</h3>
+<ul>
+<li>Le joueur 1 entre un nombre compris entre 0 et 100</li>
+<li>Le programme demande le nombre mystère au joueur 2 tant que celui-ci n’a pas entré la bonne valeur.<br>
+On appelle <strong>diff</strong> la valeur absolue de la différence entre le nombre mystère et la proposition du joueur 2</li>
+<li>Si diff est supérieur à 20, le programme affichera <strong>glacé</strong></li>
+<li>Si diff est supérieur à 10 et inférieur à 20, le programme affichera <strong>froid</strong></li>
+<li>Si diff est supérieur à 5 et inférieur à 10, le programme affichera <strong>chaud</strong></li>
+<li>Si diff est inférieur à 5 et supérieur à 0, le programme affichera <strong>bouillant</strong></li>
+<li>Si diff est égal à zéro c’est que nous avons trouvé le nombre mystère, le programme affichera <strong>Gagné en X coups</strong> et s’arrêtera.</li>
+</ul>
+<h3 id="cadre">Cadre</h3>
+<p>Pour simplifier notre code, on partira du principe que les utilisateurs entreront uniquement des nombres entiers, nous verrons plus tard comment traiter les cas ou l’utilisateur ne fait pas ce que l’on attend de lui.</p>
+<h3 id="cast">Cast</h3>
+<p>La fonction <strong>input</strong> de Python nous retourne un résultat sous forme de string, il est possible de forcer le type d’une variable (cast)</p>
+<pre><code># Cast d'un string en int
+valeur = input("Entrez un entier : ")
+valeur = int(valeur)
+</code></pre>
+<h3 id="schéma-logique">Schéma logique:</h3>
+<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-zLp36HarqKCyihhW" height="100%" viewBox="0 0 3786.999984741211 703.6187438964844" style="max-width:3786.999984741211px;"><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M480.84375,287.5L505.84375,287.5L530.84375,287.5" marker-end="url(#arrowhead1710)" style="fill:none"></path><defs><marker id="arrowhead1710" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M821.5,287.5L846.5,287.5L872.0000015258792,288.00000000000006" marker-end="url(#arrowhead1711)" style="fill:none"></path><defs><marker id="arrowhead1711" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1041.6010934073913,222.65109493327023L1161.4187469482422,71.3125L1219.3874969482422,71.3125" marker-end="url(#arrowhead1712)" style="fill:none"></path><defs><marker id="arrowhead1712" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1606.1374969482422,71.3125L1634.1374969482422,71.3125L1757.5281219482422,71.3125" marker-end="url(#arrowhead1713)" style="fill:none"></path><defs><marker id="arrowhead1713" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1106.9499984741212,288L1161.4187469482422,287.5L1216.3874969482422,287.5" marker-end="url(#arrowhead1714)" style="fill:none"></path><defs><marker id="arrowhead1714" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1609.1374969482422,287.5L1634.1374969482422,287.5L1659.6374969482422,288" marker-end="url(#arrowhead1715)" style="fill:none"></path><defs><marker id="arrowhead1715" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1847.6785135986584,215.66601665041625L1974.4812469482422,56L2159.637496948242,56L2344.793746948242,56L2522.5249938964844,56L2700.2562408447266,56L2877.9874877929688,56L3051.203109741211,56L3126.515609741211,56" marker-end="url(#arrowhead1716)" style="fill:none"></path><defs><marker id="arrowhead1716" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1879.8531175714916,328.1593793767507L1974.4812469482422,370.09375L2029.9499969482422,370.59375" marker-end="url(#arrowhead1717)" style="fill:none"></path><defs><marker id="arrowhead1717" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2227.9136974139305,308.1824504656884L2344.793746948242,199.59375L2522.5249938964844,199.59375L2700.2562408447266,199.59375L2877.9874877929688,199.59375L3051.203109741211,199.59375L3129.531234741211,199.59375" marker-end="url(#arrowhead1718)" style="fill:none"></path><defs><marker id="arrowhead1718" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2251.431458738437,409.4872882098053L2344.793746948242,448.9749984741211L2400.262499999999,449.47499847412183" marker-end="url(#arrowhead1719)" style="fill:none"></path><defs><marker id="arrowhead1719" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2598.9872453412772,402.6747499189139L2700.2562408447266,339.4749984741211L2877.9874877929688,339.4749984741211L3051.203109741211,339.4749984741211L3120.109359741211,339.4749984741211" marker-end="url(#arrowhead1720)" style="fill:none"></path><defs><marker id="arrowhead1720" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2603.9512627405475,491.3112357335733L2700.2562408447266,540.8562469482422L2755.7249938964833,541.3562469482422" marker-end="url(#arrowhead1721)" style="fill:none"></path><defs><marker id="arrowhead1721" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2974.3958527632326,514.5021119185064L3051.203109741211,492.3562469482422L3101.656234741211,492.3562469482422" marker-end="url(#arrowhead1722)" style="fill:none"></path><defs><marker id="arrowhead1722" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2971.3057956443267,571.3004452004012L3051.203109741211,596.7374954223633L3232.484359741211,596.7374954223633L3388.312484741211,596.7374954223633L3544.9667558168635,436.4749984741211" marker-end="url(#arrowhead1723)" style="fill:none"></path><defs><marker id="arrowhead1723" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M3338.453109741211,56L3388.312484741211,56L3560.107247062592,364.4749984741211" marker-end="url(#arrowhead1724)" style="fill:none"></path><defs><marker id="arrowhead1724" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M3335.437484741211,199.59375L3388.312484741211,199.59375L3545.7758480577336,364.4749984741211" marker-end="url(#arrowhead1725)" style="fill:none"></path><defs><marker id="arrowhead1725" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M3344.859359741211,339.4749984741211L3388.312484741211,339.4749984741211L3466.936972446129,364.4749984741211" marker-end="url(#arrowhead1726)" style="fill:none"></path><defs><marker id="arrowhead1726" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M3363.312484741211,492.3562469482422L3388.312484741211,492.3562469482422L3504.9899182762665,436.4749984741211" marker-end="url(#arrowhead1727)" style="fill:none"></path><defs><marker id="arrowhead1727" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M3557.276552542074,436.4749984741211L3388.312484741211,702.3312454223633L3232.484359741211,702.3312454223633L3051.203109741211,702.3312454223633L2877.9874877929688,702.3312454223633L2700.2562408447266,702.3312454223633L2522.5249938964844,702.3312454223633L2344.793746948242,702.3312454223633L2159.637496948242,702.3312454223633L1974.4812469482422,702.3312454223633L1789.3249969482422,702.3312454223633L1634.1374969482422,702.3312454223633L1412.7624969482422,702.3312454223633L1161.4187469482422,702.3312454223633L1023.9696220981347,370.9803794277443" marker-end="url(#arrowhead1728)" style="fill:none"></path><defs><marker id="arrowhead1728" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1161.4187469482422,71.3125)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1161.4187469482422,287.5)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2522.5249938964844,56)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1974.4812469482422,370.09375)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2700.2562408447266,199.59375)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2344.793746948242,448.9749984741211)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2877.9874877929688,339.4749984741211)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2700.2562408447266,540.8562469482422)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(3051.203109741211,492.3562469482422)" style="opacity: 1;"><g transform="translate(-25.453125,-26)" class="label"><foreignObject width="50.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Oui</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(3232.484359741211,596.7374954223633)" style="opacity: 1;"><g transform="translate(-29.96875,-26)" class="label"><foreignObject width="59.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Non</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(250.421875,287.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-230.421875" y="-36" width="460.84375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-220.421875,-26)"><foreignObject width="440.84375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Joueur 1 entre nombre mystère</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(676.171875,287.5)"><rect rx="0" ry="0" x="-145.328125" y="-36" width="290.65625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-135.328125,-26)"><foreignObject width="270.65625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Initialiser compteur</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(988.9749984741211,287.5)"><polygon points="117.47500000000001,0 234.95000000000002,-117.47500000000001 117.47500000000001,-234.95000000000002 0,-117.47500000000001" rx="5" ry="5" transform="translate(-117.47500000000001,117.47500000000001)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-74.84375,-52)"><foreignObject width="149.6875" height="104"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Joueur 2 <br>à trouver ?</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="Y" transform="translate(1412.7624969482422,71.3125)"><rect rx="0" ry="0" x="-193.375" y="-36" width="386.75" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-183.375,-26)"><foreignObject width="366.75" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Afficher gagné en X coups</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="Z" transform="translate(1789.3249969482422,71.3125)"><rect rx="0" ry="0" x="-31.796875" y="-36" width="63.59375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-21.796875,-26)"><foreignObject width="43.59375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Fin</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(1412.7624969482422,287.5)"><rect rx="0" ry="0" x="-196.375" y="-36" width="392.75" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-186.375,-26)"><foreignObject width="372.75" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Joueur 2 entre proposition</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="E" transform="translate(1789.3249969482422,287.5)"><polygon points="130.1875,0 260.375,-130.1875 130.1875,-260.375 0,-130.1875" rx="5" ry="5" transform="translate(-130.1875,130.1875)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-116.734375,-26)"><foreignObject width="233.46875" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Proposition &gt; 20</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="F" transform="translate(3232.484359741211,56)"><rect rx="0" ry="0" x="-105.96875" y="-36" width="211.9375" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-95.96875,-26)"><foreignObject width="191.9375" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Afficher glacé</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="G" transform="translate(2159.637496948242,370.09375)"><polygon points="130.1875,0 260.375,-130.1875 130.1875,-260.375 0,-130.1875" rx="5" ry="5" transform="translate(-130.1875,130.1875)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-116.734375,-26)"><foreignObject width="233.46875" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Proposition &gt; 10</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="H" transform="translate(3232.484359741211,199.59375)"><rect rx="0" ry="0" x="-102.953125" y="-36" width="205.90625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-92.953125,-26)"><foreignObject width="185.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Afficher froid</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="I" transform="translate(2522.5249938964844,448.9749984741211)"><polygon points="122.7625,0 245.525,-122.7625 122.7625,-245.525 0,-122.7625" rx="5" ry="5" transform="translate(-122.7625,122.7625)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-107.453125,-26)"><foreignObject width="214.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Proposition &gt; 5</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="J" transform="translate(3232.484359741211,339.4749984741211)"><rect rx="0" ry="0" x="-112.375" y="-36" width="224.75" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-102.375,-26)"><foreignObject width="204.75" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Afficher chaud</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="K" transform="translate(2877.9874877929688,540.8562469482422)"><polygon points="122.7625,0 245.525,-122.7625 122.7625,-245.525 0,-122.7625" rx="5" ry="5" transform="translate(-122.7625,122.7625)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-107.453125,-26)"><foreignObject width="214.90625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Proposition &gt; 0</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="L" transform="translate(3232.484359741211,492.3562469482422)"><rect rx="0" ry="0" x="-130.828125" y="-36" width="261.65625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-120.828125,-26)"><foreignObject width="241.65625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Afficher bouillant</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="M" transform="translate(3580.156234741211,400.4749984741211)"><rect rx="0" ry="0" x="-166.84375" y="-36" width="333.6875" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-156.84375,-26)"><foreignObject width="313.6875" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Incrémenter compteur</div></foreignObject></g></g></g></g></g></g></svg></div>
+<h3 id="code-1">Code</h3>
+<p>Proposition de solution</p>
+<pre><code># chaud_froid.py  
+  
+mystere = input("Entrez le nombre mystère : ")  
+mystere = int(mystere)  
+  
+if mystere &lt; 0 or mystere &gt; 100:  
+  print("Le nombre doit être compris entre 0 et 100")  
+  quit(-1)  # On force le programme à quitter en indiquant une erreur, -1 est souvent associé à une erreur quand 0 est associé à "tout va bien"  
+  
+compteur = 0  
+proposition = -1 # On fixe délibérément une proposition qui ne peut pas fonctionner  
+while proposition != mystere:  
+    proposition = int(input("Entrez un nombre : "))  
+  
+    diff = abs(mystere - proposition)  
+  
+    if diff &gt; 20:  
+        print("Glacé")  
+    elif diff &gt; 10:  
+        print("Froid")  
+    elif diff &gt; 5:  
+        print("Chaud")  
+    elif diff &gt; 0:  
+        print("Bouillant")  
+    else:  
+        print("Trouvé")  
+  
+    compteur += 1  
+  
+print("Gagné en " + str(compteur) + " coups")
+</code></pre>
+<h1 id="listes-1">8 - Listes</h1>
+<h2 id="rappel">Rappel</h2>
+<p>Les listes sont des tableaux dynamiques qui nous permettent de stocker tout ce que l’on veut, quel que soit le type.<br>
+Exemple :</p>
+<pre><code># Déclarer une liste
+&lt;nom_variable&gt; = [&lt;valeur_1&gt;, &lt;valeur_2&gt;, etc...]
+&gt;&gt;&gt; maListe = []
+&gt;&gt;&gt; maListe = [1, 2, 3, 4, 5]
+&gt;&gt;&gt; maListe
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; maListe = [1, "Bonjour", 3.14, [1, 3]]
+&gt;&gt;&gt; maListe
+[1, 'Bonjour', 3.14, [1, 3]]
+</code></pre>
+<h2 id="attention-aux-indices">Attention aux indices</h2>
+<p>Une liste commence toujours par 0, c’est perturbant au début, mais on s’y fait.<br>
+Ce qui veut dire que pour une liste de <strong>4</strong> éléments, les indices vont de <strong>0 à 3</strong>.</p>
+<h2 id="opérations-sur-les-listes">Opérations sur les listes</h2>
+<h3 id="taille-dune-liste">Taille d’une liste</h3>
+<p>Connaitre la taille d’une liste est l’une des opérations les plus importantes, cela nous permet de parcourir et d’accéder à des éléments de la liste sans erreur.<br>
+Connaitre la taille d’une liste est possible via la fonction <strong>len</strong><br>
+Exemple:</p>
+<pre><code>len(&lt;liste&gt;)
+&gt;&gt;&gt; notes = [16, 18, 14, 17]
+&gt;&gt;&gt; len(notes)
+4
+</code></pre>
+<h3 id="accéder-à-un-élément">Accéder à un élément</h3>
+<p>Pour accéder à un élément, il suffit de fournir l’indice de l’élément.<br>
+Exemple:</p>
+<pre><code>&lt;liste&gt;[&lt;indice&gt;]
+&gt;&gt;&gt; notes = [16, 18, 14, 17]
+&gt;&gt;&gt; notes[0]
+16
+&gt;&gt;&gt; notes[1]
+18
+&gt;&gt;&gt; notes[2]
+14
+&gt;&gt;&gt; notes[3]
+17
+&gt;&gt;&gt; notes[4]
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+IndexError: list index out of range
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="modifier-un-élément-dune-liste">Modifier un élément d’une liste</h3>
+<p>Pour modifier un élément dans une liste, il faut fournir l’indice et la nouvelle valeur.<br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; personnages = ["Guenièvre", "Karadoc", "Merlin", "Lancelot", "Perceval"]
+&gt;&gt;&gt; personnages[3]
+'Lancelot'
+&gt;&gt;&gt; personnages[3] = "Arthur"
+&gt;&gt;&gt; personnages[3]
+'Arthur'
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="ajouter-un-élément-à-la-fin-dune-liste">Ajouter un élément à la fin d’une liste</h3>
+<p>Pour ajouter un élément à une liste il suffit d’utiliser la méthode <strong>append</strong>.<br>
+Exemple:</p>
+<pre><code>&lt;liste&gt;.append(&lt;value&gt;)
+&gt;&gt;&gt; notes = [16, 18, 14, 17]
+&gt;&gt;&gt; notes.append(15)
+&gt;&gt;&gt; notes
+[16, 18, 14, 17, 15]
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="ajouter-un-élément-à-une-position-définie">Ajouter un élément à une position définie</h3>
+<p>Il est possible d’ajouter un élément à une position définie à l’aide de la méthode <strong>insert</strong>, les éléments du tableau subiront un décalage vers la droite.<br>
+Exemple:</p>
+<pre><code>&lt;liste&gt;.insert(&lt;indice&gt;, &lt;value&gt;)
+&gt;&gt;&gt; notes = [16, 18, 14, 17]
+&gt;&gt;&gt; notes.insert(0, 10)    # Ajout de la valeur 10 à la position 0
+&gt;&gt;&gt; notes
+[10, 16, 18, 14, 17]
+</code></pre>
+<h3 id="connaitre-lindice-dun-élément-dans-une-liste">Connaitre l’indice d’un élément dans une liste</h3>
+<p>Il est possible de connaitre l’indice d’un élément dans une liste à l’aide de la méthode <strong>index</strong>.<br>
+Exemple:</p>
+<pre><code>&lt;liste&gt;.index(&lt;valeur&gt;)
+&gt;&gt;&gt; personnages = ["Guenièvre", "Karadoc", "Merlin", "Lancelot", "Perceval"]
+&gt;&gt;&gt; personnages.index("Karadoc")
+1
+&gt;&gt;&gt; personnages.index("Arthur")
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+ValueError: 'Arthur' is not in list
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="supprimer-un-élément-dans-une-liste">Supprimer un élément dans une liste</h3>
+<p>Pour supprimer un élément il suffit d’utiliser la méthode <strong>remove</strong>.<br>
+Exemple:</p>
+<pre><code>&lt;liste&gt;.remove(&lt;valeur&gt;)
+&gt;&gt;&gt; personnages = ["Guenièvre", "Karadoc", "Merlin", "Lancelot", "Perceval", "Dora"]
+&gt;&gt;&gt; personnages.remove("Dora")
+&gt;&gt;&gt; personnages
+['Guenièvre', 'Karadoc', 'Merlin', 'Lancelot', 'Perceval']
+</code></pre>
+<h2 id="parcourir-une-liste-avec-les-boucles">Parcourir une liste avec les boucles</h2>
+<p>Pour parcourir les listes nous avons la possibilité d’utiliser la boucle <strong>while</strong> afin de parcourir tout les indices du tableau, ou utiliser la boucle <strong>for in</strong> qui parcours chaque élément de la liste.</p>
+<h3 id="while-1">While</h3>
+<p>Pour parcourir les personnages à l’aide la boucle while on :</p>
+<ul>
+<li>Crée un compteur qu’on incrémente tant qu’il est inférieur à la taille de la liste</li>
+<li>Affiche l’indice et la valeur associée<br>
+Exemple:</li>
+</ul>
+<pre><code>personnages = ["Guenièvre", "Karadoc", "Merlin", "Lancelot", "Perceval"]
+compteur = 0
+while compteur &lt; len(personnages):
+    # cast du compteur en string pour la concaténation
+    print("Indice : " + str(compteur) + ", Personnage : " + personnages[compteur])
+    compteur += 1   # On n’oublie pas d'incrémenter le compteur 
+ # Sortie
+Indice : 0, Personnage : Guenièvre
+Indice : 1, Personnage : Karadoc
+Indice : 2, Personnage : Merlin
+Indice : 3, Personnage : Lancelot
+Indice : 4, Personnage : Perceval
+</code></pre>
+<h3 id="for-in">For in</h3>
+<p>La boucle for in est très puissante, elle permet de parcourir la liste élément par élément.<br>
+On peut traduire la boucle for in par : pour chaque élément dans ma liste.<br>
+Exemple:</p>
+<pre><code>for &lt;variable_name&gt; in &lt;liste&gt;:
+  # Votre code
+personnages = ["Guenièvre", "Karadoc", "Merlin", "Lancelot", "Perceval"]
+for perso in personnages:
+    print(perso)
+# Sortie
+Guenièvre
+Karadoc
+Merlin
+Lancelot
+Perceval
+</code></pre>
+<h1 id="dictionnaire">9 - Dictionnaire</h1>
+<h2 id="rappel-1">Rappel</h2>
+<p>Les dictionnaires sont un type de données extrêmement puissant qui permet d’associer une clé à une valeur.<br>
+Exemple:</p>
+<pre><code># Déclarer un dictionnaire
+&lt;nom_variable&gt; = {&lt;cle_1&gt;: &lt;valeur_1&gt;, &lt;cle_2&gt;: &lt;valeur_2&gt;}
+&gt;&gt;&gt; mongoConfig = {"host": "localhost", "port": 27017}
+&gt;&gt;&gt; mongoConfig
+{'port': 27017, 'host': 'localhost'}
+</code></pre>
+<h2 id="opérations-sur-les-dictionnaires">Opérations sur les dictionnaires</h2>
+<h3 id="taille-dun-dictionnaire">Taille d’un dictionnaire</h3>
+<p>Pour connaitre la taille d’un dictionnaire, il nous suffit d’utiliser la fonction <strong>len</strong><br>
+Exemple:</p>
+<pre><code>len(&lt;dictionnaire&gt;)
+&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig
+{'host': 'localhost', 'port': 443, 'timeout': 60}
+&gt;&gt;&gt; len(serverConfig)
+3
+</code></pre>
+<h3 id="accéder-à-un-élément-1">Accéder à un élément</h3>
+<p>Pour accéder à un élément, il suffit de fournir la clé de l’élément.<br>
+Exemple:</p>
+<pre><code>&lt;dictionnaire&gt;[&lt;cle&gt;]
+&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig["host"]
+'localhost'
+&gt;&gt;&gt; serverConfig["port"]
+443
+</code></pre>
+<h3 id="modifier-un-élément-dun-dictionnaire">Modifier un élément d’un dictionnaire</h3>
+<p>Pour modifier un élément d’un dictionnaire, il faut fournir la clé et la nouvelle valeur.<br>
+Exemple:</p>
+<pre><code>&lt;dictionnaire&gt;[&lt;cle&gt;] = &lt;valeur&gt;
+&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig["port"]
+443
+&gt;&gt;&gt; serverConfig["port"] = 1883
+&gt;&gt;&gt; serverConfig["port"]
+1883
+</code></pre>
+<h3 id="supprimer-un-élément-dans-un-dictionnaire">Supprimer un élément dans un dictionnaire</h3>
+<p>Pour supprimer un élément, il suffit d’utiliser la fonction <strong>del</strong> en fournissant la clé à supprimer.<br>
+Exemple:</p>
+<pre><code>del &lt;dictionnaire&gt;[&lt;cle&gt;]
+&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; del serverConfig["timeout"]
+&gt;&gt;&gt; serverConfig
+{'host': 'localhost', 'port': 1883}
+</code></pre>
+<h3 id="connaitre-les-clés-présentes-dans-un-dictionnaire">Connaitre les clés présentes dans un dictionnaire:</h3>
+<p>Il est possible de récupérer les clés présentes dans un dictionnaire à l’aide la méthode <strong>keys</strong>.</p>
+<blockquote>
+<p>Attention le format de retour n’est pas une liste, charge à nous de faire un cast si besoin.<br>
+Exemple:</p>
+</blockquote>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig.keys()
+dict_keys(['host', 'port', 'timeout'])
+&gt;&gt;&gt; list(serverConfig.keys())    # Cast en list
+['host', 'port', 'timeout']
+</code></pre>
+<h3 id="connaitre-les-valeurs-présentes-dans-un-dictionnaire">Connaitre les valeurs présentes dans un dictionnaire</h3>
+<p>De la même manière il est possible de récupérer les valeurs présentes dans un dictionnaire à l’aide de la méthode <strong>values</strong><br>
+Exemple :</p>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig.values()
+dict_values(['localhost', 443, 60])
+&gt;&gt;&gt; list(serverConfig.values())
+['localhost', 443, 60]
+</code></pre>
+<h3 id="connaitre-lensemble-des-tuples-clé----valeur">Connaitre l’ensemble des tuples clé &lt;–&gt; valeur</h3>
+<p>Il est aussi possible de récupérer l’ensemble des tuples clé &lt;–&gt; valeur présents dans le dictionnaire à l’aide de la méthode <strong>items</strong><br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; serverConfig.items()
+dict_items([('host', 'localhost'), ('port', 443), ('timeout', 60)])
+&gt;&gt;&gt; list(serverConfig.items())
+[('host', 'localhost'), ('port', 443), ('timeout', 60)]
+</code></pre>
+<h2 id="parcourir-un-dictionnaire-à-laide-dune-boucle">Parcourir un dictionnaire à l’aide d’une boucle</h2>
+<p>Pour parcourir une liste, plusieurs choix s’offrent à nous, il est possible d’utiliser le <strong>while</strong> mais en général on utilise le <strong>for in</strong> qui est plus rapide et plus pratique.</p>
+<h3 id="important-1">Important</h3>
+<p>Un dictionnaire n’est pas ordonné, l’ordre que vous avez défini lors de la création de votre dictionnaire ne sera pas forcément l’ordre de lecture.</p>
+<h3 id="for-in-1">For in</h3>
+<p>Le parcours d’un dictionnaire avec la boucle for in c’est :<br>
+“Pour chaque clé présente dans le dictionnaire”.<br>
+On accède ensuite à l’élément en fournissant la clé<br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; for cle in serverConfig:
+...  print(serverConfig[cle])
+...
+localhost
+443
+60
+</code></pre>
+<p>Il est aussi de faire une boucle en utilisant la méthode <strong>items</strong>, ce qui donnera :<br>
+“Pour chaque couple (tuple) clé &lt;–&gt; valeur présents dans le dictionnaire”<br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; for cle, valeur in serverConfig.items():   # Revoir les tuples
+...  print(cle + " : " + str(valeur))          # Cast pour concaténation
+...
+host : localhost
+port : 443
+timeout : 60
+</code></pre>
+<h3 id="while-2">While</h3>
+<p>L’utilisation de la boucle while pour parcourir un dictionnaire est moins agréable, mais tout à fait faisable.<br>
+Exemple:</p>
+<pre><code>&gt;&gt;&gt; serverConfig = {
+...  "host": "localhost",
+...  "port": 443,
+...  "timeout": 60
+... }
+&gt;&gt;&gt; keyList = list(serverConfig.keys())    # Récupération de la liste des clés
+&gt;&gt;&gt; compteur = 0
+&gt;&gt;&gt; while compteur &lt; len(keyList):         # On continue tant qu'on as pas parcouru toute les clés
+...  cle = keyList[compteur]
+...  valeur = serverConfig[cle]
+...  print(cle + " : " + str(valeur))
+...  compteur += 1                         # On n’oublie pas l'incrémentation
+...
+host : localhost
+port : 443
+timeout : 60
+</code></pre>
+<h1 id="exercices">10 - Exercices</h1>
+<p>Petits exercices pour s’entrainer à la maison, la programmation c’est comme le vélo, il faut pratiquer pour que ça rentre, et une fois que c’est rentré ça s’oublie pas.</p>
+<blockquote>
+<p>Les exercices suivent l’ordre des notions vues dans la formation, la difficulté n’est pas forcément croissante</p>
+</blockquote>
+<h2 id="exercice-1">Exercice 1</h2>
+<p>Demander à un utilisateur son prénom et sa date de naissance afin de lui dire<br>
+“Bonjour <code>prénom</code> vous avez <code>age</code> ans”</p>
+<h3 id="aides">Aides</h3>
+<h4 id="lire-une-entrée-clavier">Lire une entrée clavier</h4>
+<pre><code>&lt;resultat&gt; = input("&lt;message&gt;")
+</code></pre>
+<h4 id="cast-dun-string-en-int">Cast d’un string en int</h4>
+<pre><code>&lt;mon_int&gt; = int(&lt;mon_string&gt;)
+</code></pre>
+<h4 id="cast-dun-int-en-string">Cast d’un int en string</h4>
+<pre><code>&lt;mon_string&gt; = str(&lt;mon_int&gt;)
+</code></pre>
+<h4 id="connaitre-lannée-actuelle">Connaitre l’année actuelle</h4>
+<p>Le code sera expliqué lors d’une prochaine formation</p>
+<pre><code>from datetime import datetime
+&lt;annee&gt; = datetime.now().year
+</code></pre>
+<h3 id="cadre-1">Cadre</h3>
+<p>On supposera que l’utilisateur fait ce qu’on lui demande, si on attend un entier (l’année), l’utilisateur rentrera un entier<br>
+Nous verrons ensemble comment traiter les erreurs</p>
+<h3 id="résultat-attendu">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice1.py</code></p>
+<pre><code>== Exercice 1 ==
+Entrez votre prénom : Arthur
+Entrez votre année de naissance : 1990
+Bonjour Arthur vous avez 28 ans
+</code></pre>
+<h2 id="exercice-2">Exercice 2</h2>
+<p>Réaliser une calculatrice avec les opérateurs <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></p>
+<h3 id="déroulement-1">Déroulement</h3>
+<ol>
+<li>Le programme demande à l’utilisateur l’opération à réaliser via un menu</li>
+<li>Le programme demande 2 nombres à l’utilisateur</li>
+<li>Le programme fait le calcul et retourne le résultat</li>
+</ol>
+<h3 id="aides-1">Aides</h3>
+<h4 id="cast-dun-string-en-float">Cast d’un string en float</h4>
+<pre><code>&lt;mon_float&gt; = float(&lt;mon_string&gt;)
+</code></pre>
+<h4 id="print-sur-plusieurs-lignes-à-l’aide-du-caractère-de-fin-de-ligne-n">Print sur plusieurs lignes à l’aide du caractère de fin de ligne <code>\n</code></h4>
+<p>Il est possible de faire des tabulations à l’aide de <code>\t</code></p>
+<pre><code>print("==Exercice 2==\n\tMenu :")
+# Sortie
+== Exercice 2 ==
+  Menu :
+</code></pre>
+<h4 id="savoir-si-un-élément-est-dans-une-liste">Savoir si un élément est dans une liste</h4>
+<pre><code>&gt;&gt;&gt; choix = [1, 2, 3, 4, 9]
+&gt;&gt;&gt; 9 in choix
+True
+&gt;&gt;&gt; 7 in choix
+False
+</code></pre>
+<h3 id="résultat-attendu-1">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice2.py</code></p>
+<pre><code># Mauvais choix, on quitte
+== Exercice 2 ==
+Menu :
+ 1 - Addition
+ 2 - Soustraction
+ 3 - Division
+ 4 - Multiplication
+ 9 - Quitter
+Votre choix : 10
+Mauvais choix
+</code></pre>
+<pre><code># Bon choix, on réalise l'opération
+== Exercice 2 ==
+Menu :
+ 1 - Addition
+ 2 - Soustraction
+ 3 - Division
+ 4 - Multiplication
+ 9 - Quitter
+Votre choix : 1
+== Addition ==
+Entrez le nombre 1 : 3.14
+Entrez le nombre 2 : 121
+3.14 + 121.0 = 124.14
+</code></pre>
+<pre><code># Si on détecte une division impossible on quitte
+== Exercice 2 ==
+Menu :
+ 1 - Addition
+ 2 - Soustraction
+ 3 - Division
+ 4 - Multiplication
+ 9 - Quitter
+Votre choix : 3
+== Division ==
+Entrez le nombre 1 : 123
+Entrez le nombre 2 : 0
+&lt;!&gt; Division par zéro impossible
+</code></pre>
+<pre><code>== Exercice 2 ==
+Menu :
+ 1 - Addition
+ 2 - Soustraction
+ 3 - Division
+ 4 - Multiplication
+ 9 - Quitter
+Votre choix : 9
+Vous avez choisi de quitter
+</code></pre>
+<h2 id="exercice-3">Exercice 3</h2>
+<p>Demander une année à un utilisateur et lui indiquer si l’année est bissextile ou non.<br>
+Une année est bissextile si :</p>
+<ol>
+<li>Elle est divisible par 4 <strong>et</strong> non divisible par 100, <strong>ou</strong></li>
+<li>Si elle est divisible par 400</li>
+</ol>
+<h3 id="aides-2">Aides</h3>
+<h4 id="savoir-si-un-nombre-est-divisible-par-un-autre">Savoir si un nombre est divisible par un autre</h4>
+<p>Pour savoir si un nombre est divisible par un autre on utilise l’opérateur <code>%</code> qui nous retourne le reste de la division entière<br>
+Si la valeur est 0 c’est que le nombre est divisible, sinon il ne l’est pas</p>
+<pre><code>&gt;&gt;&gt; 800 % 400
+0
+&gt;&gt;&gt; (800 % 400) == 0
+True
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="résultat-attendu-2">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice3.py</code></p>
+<pre><code>== Exercice 3 ==
+Entrez une année : 2008
+Année bissextile
+</code></pre>
+<pre><code>== Exercice 3 ==
+Entrez une année : 2018
+Année normale
+</code></pre>
+<h2 id="exercice-4">Exercice 4</h2>
+<p>Demander une année à l’utilisateur et calculer les 10 prochaines années bissextiles à partir de cette date à l’aide d’une <strong>boucle</strong>.</p>
+<h3 id="résultat-attendu-3">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice4.py</code></p>
+<pre><code>== Exercice 4 ==
+Entrez une année : 2008
+2008
+2012
+2016
+2020
+2024
+2028
+2032
+2036
+2040
+2044
+</code></pre>
+<h2 id="exercice-5">Exercice 5</h2>
+<p>Demander à l’utilisateur un nombre d’étoiles à afficher et les afficher sur une seule ligne à l’aide d’une <strong>boucle</strong></p>
+<h3 id="résultat-attendu-4">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice5.py</code></p>
+<pre><code>== Exercice 5 ==
+Entrez un entier positif : 6
+******
+</code></pre>
+<h2 id="exercice-6">Exercice 6</h2>
+<p>Demander à l’utilisateur une largeur et une longueur pour afficher un pavé d’étoiles à l’aide d’une boucle dans une boucle</p>
+<h3 id="aide">Aide</h3>
+<p>Il est tout à fait possible de faire plusieurs niveaux de boucles, il faut toujours faire attention à la condition pour ne pas nous bloquer dans des boucles infinies</p>
+<pre><code>i = 0  
+while i &lt; 10:  
+  j = 0  
+  while j &lt; 20:  
+    j += 1  
+  i += 1
+</code></pre>
+<h3 id="résultat-attendu-5">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice6.py</code></p>
+<pre><code>== Exercice 6 ==
+Entrez une largeur : 3
+Entrez une longueur : 10
+**********
+**********
+**********
+</code></pre>
+<h2 id="exercice-7">Exercice 7</h2>
+<p>Réaliser un petit jeu de question-réponse.</p>
+<h3 id="déroulement-2">Déroulement</h3>
+<ol>
+<li>Le programme pioche une question</li>
+<li>Le programme affiche les choix possibles et attend la réponse de l’utilisateur</li>
+<li>Le programme indique si l’utilisateur à bien répondu</li>
+</ol>
+<h3 id="aides-3">Aides</h3>
+<h4 id="structure-de-données">Structure de données</h4>
+<p>Proposition de structure de données, une liste de dictionnaire, chaque dictionnaire contient la question, les réponses possibles et la réponse attendue</p>
+<pre><code>questions = [
+  {
+    "question": "Votre question",
+    "reponses": [
+      "Reponse A",
+      "Reponse B",
+      "Reponse C"
+    ],
+    "correct": "Reponse A"
+  },
+  {
+    "question": "Votre question",
+    "reponses": [
+      "Reponse A",
+      "Reponse B",
+      "Reponse C"
+    ],
+    "correct": "Reponse B"  
+  }  
+]
+</code></pre>
+<h4 id="nombre-aléatoire">Nombre aléatoire</h4>
+<p>randint retourne un nombre aléatoire compris dans [a, b]</p>
+<pre><code>&gt;&gt;&gt; from random import randint
+&gt;&gt;&gt; randint(0, 10)
+7
+</code></pre>
+<h4 id="accès-à-la-donnée">Accès à la donnée</h4>
+<p>Pour accéder à une donnée plus profonde, il suffit d’ajouter des crochets</p>
+<pre><code># Accès à la première réponse possible de la première question
+print(questions[0]["reponses"][0])
+Reponse A
+</code></pre>
+<h3 id="résultat-attendu-6">Résultat attendu</h3>
+<p>Le ficher s’appellera <code>exercice7.py</code></p>
+<pre><code>== Exercice 7 ==
+Question #2 Quelle est la couleur du ciel ?
+0 : Reponse A --&gt; Bleu
+1 : Reponse B --&gt; Vert
+2 : Reponse C --&gt; Rouge
+Votre choix : 3
+Mauvais choix
+</code></pre>
+<pre><code>== Exercice 7 ==
+Question #2 Quelle est la valeur de pi ?
+0 : Reponse A --&gt; 3.54
+1 : Reponse B --&gt; 3.14
+2 : Reponse C --&gt; 2.14
+Votre choix : 1
+Bonne réponse !
+</code></pre>
+<pre><code>== Exercice 7 ==
+Question #1 Votre question
+0 : Reponse A
+1 : Reponse B
+2 : Reponse C
+Votre choix : 2
+Mauvaise réponse, dommage
+</code></pre>
+
+    </div>
+  </div>
+</body>
+
+</html>
